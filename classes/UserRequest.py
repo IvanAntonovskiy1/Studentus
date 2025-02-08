@@ -5,5 +5,5 @@ from typing import Optional
 #'{"id": "kashdkasjhd", "level": 1, "type": 0}'
 class UserRequest(BaseModel):
     id            : str            # айди запроса которая будет храниться как лист у юзера и как название к задаче
-    level         : int            # уровень задачи которая нужна
+    formatShem    : int            # уровень задачи которая нужна (ПОМЕНЯТЬ НА NAME_SHEM)
     type          : int            # тип схемы или рандом

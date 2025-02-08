@@ -5,7 +5,8 @@ from classes.Parameters import Parameters
 
 
 class ParametersForGeneratedCircuit(BaseModel):
-    circuitName   : Optional[int]
+    circuitType   : int
+    circuitFormat : int
     voltageSource : list[Parameters]                      # возможно одно, а может быть и лист
     timePulse     : Parameters
     Resistor      : list[Parameters]                      # надо сделать лист значений

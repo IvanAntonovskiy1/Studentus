@@ -10,7 +10,7 @@ class JsonAnswer(BaseModel):               # переименовать во ч�
     parameterCircuit : RandomParameterForCircuit
     assignment       : str                    # время
     answer           : Answer                 # напряжение
-    level            : int
+    formatShem       : int
     type             : int
     linkToPicture    : Optional[str] = None
 

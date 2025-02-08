@@ -41,11 +41,11 @@ class Parameters(BaseModel):
                            FullName      = nameParameter + position      ,
                            Value         = (random.randint(1, 20))/1000000,
                            UnitsOfMeasure = "Ф")
-            case "I" :
+            case "L" :
                 return cls(NameParameter = nameParameter                 ,
                            Position      = position                      ,
                            FullName      = nameParameter + position      ,
-                           Value         = random.randint(1, 20)/100000,
+                           Value         = random.randint(1, 25) , #/10,
                            UnitsOfMeasure = "Гн"                         )
             case "TP":
                 return cls(NameParameter=nameParameter                   ,
