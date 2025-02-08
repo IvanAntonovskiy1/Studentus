@@ -7,8 +7,7 @@ from moduleMakeCircuit.makeCircuit import simulate_circuit, visual_result
 
 
 # написать то чтобы выдавался json файл
-def generatedRLCShem(JSON):
-    request = JSON #getParameterForSimulate(JSON)
+def generatedRLCShem(request):
     parametrsGeneratedCircuit = getLevelParameter(request.level)
     myParam = myParametersForGeneratedCircuit(request.type, getLevelParameter(request.level))
     answer = myAnswer(getAnswerList(simulate_circuit(myParam)),
