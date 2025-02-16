@@ -19,14 +19,5 @@ def generatedRLCShem(request):
                             formatShem       = request.formatShem,
                             type             = request.type)
 
-    print(jsonAnswer.model_dump_json())
-    print(visual_result(myParam))
-
-
     return jsonAnswer
 
-
-
-
-# json_date = Path("data.json").read_text()
-# generatedRLCShem(json_date)
